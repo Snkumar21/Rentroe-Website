@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Rentor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-body">
+    <header>
+        <div class="box">
+            <a href="index.html" class="rentor">Rentor</a>
+            <div class="navi">
+                <a href="index.html" class="nav">Home</a>
+                <a href="services.html" class="nav">Services</a>
+                <a href="about.html" class="nav">About</a>
+                <a href="index.html#contact" class="nav">Contact</a> <!-- Updated to anchor link with index.html -->
+            </div>
+            <a href="" class="login">Login</a>
+        </div>
+    </header>
+    <main>
+        <div class="bg2">
+        <section id="search">
+            <h2>Search for Rental Properties</h2>
+            <input type="text" id="searchInput" placeholder="Enter location or property type">
+            <button onclick="searchProperties()">Search</button>
+            <div id="searchResults"></div>
+        </section>
+        <section id="post">
+            <h2>Post a Rental Property</h2>
+            <form id="postForm" class="postForm">
+                <label for="propertyType">Property Type:</label><br>
+                <input type="text" id="propertyType" name="propertyType" required><br><br>
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" required><br><br>
+                <label for="priceRange">Price Range:</label><br>
+                <input type="text" id="priceRange" name="priceRange" required><br><br>
+                <label for="description">Description:</label><br>
+                <textarea id="description" class="description" name="description" required></textarea><br><br>
+                <button type="submit">Post</button>
+            </form>
+            <div id="postMessages"></div>
+        </section>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const state = urlParams.get('state');
+            const city = urlParams.get('city');
+            const pincode = urlParams.get('pincode');
+
+            if (state || city || pincode) {
+                document.getElementById('searchInput').value = `${state || ''} ${city || ''} ${pincode || ''}`;
+                searchProperties();
+            }
+        });
+
+        function searchProperties() {
+            const searchInput = document.getElementById('searchInput').value;
+            const searchResults = document.getElementById('searchResults');
+            
+            // For demo purposes, this example just displays the search input
+            searchResults.innerHTML = `<p>Searching for properties related to "${searchInput}"...</p>`;
+        }
+    </script>
+</body>
+</html>

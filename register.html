@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentor Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="login-body">
+    <section class="log">
+        <div class="content">
+            <h1>Register</h1>
+            <br><br>
+            <form id="registerform">
+                <div class="input-container">
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <br>
+                <div class="input-container">
+                    <input type="password" name="password" id="new_password" placeholder="New Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <br>
+                <div class="input-container">
+                    <input type="password" name="password_confirm" id="confirm_password" placeholder="Confirm Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <br>
+                <button type="submit" class="login-submit">Join Now</button>
+                <br>
+                <h2 style="text-align: center;">OR</h2>
+                <button class="google" style="margin-left: 38%;">
+                    <i class="fab fa-google"></i><span>Google</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("registerform");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                
+                const username = document.getElementById("username").value;
+                const new_password = document.getElementById("new_password").value;
+                const confirm_password = document.getElementById("confirm_password").value;
+
+                // Check if passwords match before sending to server
+                if (new_password !== confirm_password) {
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                // POST request to the server
+                fetch("/registerform", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ username, password: new_password }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Sign Up Successfully");
+                        form.reset();  // Clear the form
+                        window.location.href = "/login";
+                    } else {
+                        alert("Error: " + data.message);
+                    }
+                })
+                .catch(error => console.error("Error:", error));
+            });
+        });
+    </script>
+</body>
+</html>

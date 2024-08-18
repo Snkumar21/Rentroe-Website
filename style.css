@@ -1,0 +1,874 @@
+.main-body {
+    width: 98%;
+    height: 100%;
+    background-color: #0044ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg1 {
+    background-image: url("./Img/pngtree-d-buy-house-rent-house-flat-style-simple-gradient-color-poster-image_341478.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.box {
+    flex: 20%;
+    background: rgb(0, 0, 0, 0.4);
+    width: 97.5%;
+    padding: 15px;
+    display: flex;
+}
+
+.rentor {
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    padding-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rentor:hover {
+    color: #1e1d1d;
+    font-size: 33px;
+    text-decoration: 1px underline rgb(0, 0, 0, 0.6);
+    text-underline-offset: 5px;
+    padding-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navi {
+    text-align: center;
+    display: flex;
+    padding-left: 200px;
+    padding-top: 7px;
+}
+
+.nav {
+    padding-left: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-decoration: underline white;
+    transition: all ease-in-out 0s;
+}
+
+.login {
+    margin-left: 20%;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+}
+
+.login:hover {
+    font-size: 18px;
+    background-color: #0077ff;
+    color: white;
+}
+
+.intro {
+    flex: 80%;
+    padding-top: 10%;
+    color: white;
+    padding-left: 20px;
+}
+
+.box2 {
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    width: 86.5%;
+    margin-left: 50px;
+}
+
+.place {
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.search {
+    background-color: #4c54af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.search:hover {
+    background-color: #0044ff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4c54af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.featured {
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.featured h2 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.featured-listings {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.listing {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listing img {
+    width: 250px;
+    height: 250px;
+    align-items: center;
+}
+
+.testimonials {
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.testimonial-bg{
+    background-image: url("./Img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+}
+
+.testimonial {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonial cite{
+    text-align: left;
+}
+
+.how-it-works {
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.steps {
+    background-color: rgb(0, 0, 0, 0.1);
+    width: 94%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.step h3 {
+    font-size: 20px;
+}
+
+.step p {
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.faq {
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.faq-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 94%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.Que {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.Ans {
+    display: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.faq-item.active .Ans {
+    display: block;
+}
+
+.contact-form {
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contactForm {
+    box-shadow: 0 0 1px rgb(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 40%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #c2fce8;
+    background-image: url("./Img/monopoly-houses-blue-background-flipped-website.png");
+    border-radius: 20px;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contactForm input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.message{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.contactForm button{
+    margin-left: 41%;
+    border-radius: 5rem;
+    height: 3rem;
+    background-color: #1625cb;
+}
+
+.contactForm button:hover{
+    background-color: #c2fce8;
+    border: 1px solid black;
+    color: #000;
+}
+
+.cta{
+    background-color: #fff;
+    width: 101.4%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.cta h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cta img{
+    width: 300px;
+    height: 300px;
+    margin-left: 39%;
+}
+
+.cta-button{
+    margin-left: 45%;
+    border-radius: 5rem;
+    height: 3rem;
+    background-color: #4c54af;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.cta-button:hover{
+    background-color: #0077ff;
+}
+
+footer p{
+    text-align: center;
+    margin-left: 5%;
+}
+
+/*Index Page End*/
+
+.bg2{
+    background-image: url("./Img/62ea9e6956333cbc92dc17d7_Blog_How-to-rent-out-house-without-agent_Aug22.png");
+    margin-left: 20px;
+    background-size: cover;
+    width: 102.8rem;
+    height: 100%;
+}
+
+#search{
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.6);
+    margin-top: 20px;
+    width: 100.3rem;
+    align-items: center;
+    text-align: center;
+}
+
+#search h2{
+    color: #fff;
+    font-size: 32px;
+    text-decoration: underline 1px rgb(194, 232, 3);
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search input {
+    border-radius: 25px 0 0 25px; /* Left side semicircle */
+    border: none;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.6);
+    width: calc(50% - 50px); /* Adjusted to account for button width */
+    height: 50px;
+    font-size: 20px;
+    border-right: none; /* Remove border between input and button */
+}
+
+#search button {
+    border-radius: 0 25px 25px 0; /* Right side box shape */
+    border: none;
+    padding: 0 20px;
+    margin-left: -10px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #4c54af;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-left: none; /* Remove border between button and input */
+}
+
+#search button:hover {
+    background-color: #0044ff;
+}
+
+#searchResults{
+    color: #fff;
+    font-size: 20px;
+}
+
+#post{
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100.3rem;
+    color: #fff;
+}
+
+#post h2{
+    color: #fff;
+    font-size: 32px;
+    text-decoration: underline 1px rgb(194, 232, 3);
+    text-underline-offset: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.postForm label{
+    font-size: 18px;
+    line-height: 2px;
+    padding: 5px;
+    margin-left: 26%;
+}
+
+.postForm input{
+    border: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50px;
+    width: 50rem;
+    margin-left: 25%;
+    margin-top: 2px;
+    padding-left: 20px;
+}
+
+.description{
+    border: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50px;
+    width: 50rem;
+    margin-left: 25%;
+    margin-top: 2px;
+    padding-left: 20px;
+}
+
+#postForm button{
+    width: 70px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #4d4c4c;
+    font-size: 16px;
+    margin-left: 47%;
+}
+
+#postForm button:hover{
+    background-color: #0077ff;
+    color: white;
+}
+
+.bg3 {
+    position: relative;
+    background-image: url("./Img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.bg3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.bg3 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.about{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.about h1 h3{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(0, 0, 0, 0.6);
+    text-underline-offset: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.about h1 h3:hover{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(65, 65, 65, 0.6);
+    text-underline-offset: 5px;
+    color: #2c2b2b;
+}
+
+.about h2{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(0, 0, 0, 0.6);
+    text-underline-offset: 5px;
+    cursor: pointer;
+    text-align: right;
+    color: #000;
+}
+
+.about h2:hover{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(65, 65, 65, 0.6);
+    text-underline-offset: 5px;
+    color: #2c2b2b;
+}
+
+.about p{
+    font-size: 20px;
+    margin: 20px;
+    margin-right: 700px;
+    text-align: justify;
+}
+
+.team{
+    padding: 20px;
+    background-color: rgba(208, 208, 208, 0.897);
+    width: 100.9rem;
+    color: #000;
+    margin-left: 20px;
+}
+
+.team h2{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(0, 0, 0, 0.6);
+    text-underline-offset: 5px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+}
+
+.team h2:hover{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(65, 65, 65, 0.6);
+    text-underline-offset: 5px;
+    color: #2c2b2b;
+}
+
+.box3{
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    margin-left: 50px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.team-member{
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.4);
+    padding: 30px;
+    margin: 20px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.team-member img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-left: 40%;
+}
+
+.values{
+    padding: 20px;
+    background-color: rgba(208, 208, 208, 0.897);
+    width: 100.9rem;
+    color: #000;
+    margin-left: 20px;
+}
+
+.values h2{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(0, 0, 0, 0.6);
+    text-underline-offset: 5px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+}
+
+.values h2:hover{
+    font-size: 32px;
+    text-decoration: 1px underline rgba(65, 65, 65, 0.6);
+    text-underline-offset: 5px;
+    color: #2c2b2b;
+}
+
+.values p{
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.values ul{
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.login-body {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 30px;
+    background-image: url("./Img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.log .content {
+    box-shadow: 1px 0px 2px 1px rgba(255, 255, 255, 0.7);
+    background-color: rgba(152, 150, 150, 0.2);
+    width: 40%;
+    height: 100%;
+    margin-left: 30%;
+    padding: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 25%;
+    border-radius: 15px;
+}
+
+.log .content h1 {
+    text-decoration: 1px underline;
+    text-underline-offset: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 12%;
+    color: #fff;
+}
+
+.input-container input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    box-shadow: 1px 0px 2px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-container input:hover {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    box-shadow: 1px 0px 2px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.input-container input::placeholder {
+    color: #c8c8c8;
+}
+
+.input-container i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.remember-forgot-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 20%;
+}
+
+.remember-forgot-container input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: -55%;
+}
+
+.remember-forgot-container label{
+    margin-left: -95%;
+}
+
+.remember-forgot-container .forgot {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.remember-forgot-container .forgot:hover {
+    text-decoration: underline white;
+    text-underline-offset: 5px;
+    color: #000;
+}
+
+.login-submit {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 1px 0px 2px 1px rgba(255, 255, 255, 0.7);
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.login-submit:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.loginform h2,.registerform h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.loginform h2 a{
+    text-decoration: none;
+    color: #fff;
+    text-decoration: 1px underline #000;
+    text-underline-offset: 5px;
+}
+
+.loginform h2 a:hover{
+    text-decoration: none;
+    color: #000;
+    text-decoration: 1px underline #fff;
+    text-underline-offset: 5px;
+}
+
+.google {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto; /* Centered the button horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.google .fa-google {
+    background: conic-gradient(
+        from -45deg,
+        #ea4335 110deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.google span {
+    color: #000;
+    font-size: 19px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}

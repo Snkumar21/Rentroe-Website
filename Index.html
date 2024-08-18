@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentor Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-body">
+    <header>
+        <div class="bg1">
+            <div class="box">
+                <a href="index.html" class="rentor">Rentor</a>
+                <div class="navi">
+                    <a href="index.html" class="nav">Home</a>
+                    <a href="services.html" class="nav">Services</a>
+                    <a href="about.html" class="nav">About</a>
+                    <a href="#contact" class="nav">Contact</a>
+                </div>
+                <a href="login.html" class="login">Login</a>
+            </div>
+            <div class="intro">
+                <h1>Your Gateway to Finding the Perfect Rental</h1>
+                <h2>Connecting renters and property owners effortlessly, Rentor makes the process of finding and listing rental properties smooth and efficient.</h2>
+                <div class="box2">
+                    <input type="text" class="place" id="state" placeholder="State">
+                    <input type="text" class="place" id="city" placeholder="City">
+                    <input type="number" class="place" id="pincode" placeholder="Pincode">
+                    <button onclick="handleSearch()" class="search">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="featured">
+            <h2>Featured Listings</h2>
+            <div class="featured-listings">
+                <div class="listing">
+                    <img src="./Img/building1.avif" alt="">
+                    <h3>Cozy Apartment in Downtown</h3>
+                    <p>2 beds, 1 bath, $1,200/month</p>
+                </div>
+                <div class="listing">
+                    <img src="./Img/images (1).jpeg" alt="">
+                    <h3>Modern Studio Near University</h3>
+                    <p>1 bed, 1 bath, $850/month</p>
+                </div>
+                <div class="listing">
+                    <img src="./Img/pexels-sebastians-731082.jpg" alt="">
+                    <h3>Spacious Family Home</h3>
+                    <p>3 beds, 2 baths, $2,500/month</p>
+                </div>
+                <div class="listing">
+                    <img src="./Img/images.jpeg" alt="">
+                    <h3>Swastik PG</h3>
+                    <p>2 beds, 2 baths, $1,500/month</p>
+                </div>
+                <div class="listing">
+                    <img src="./Img/DSC00003.webp" alt="">
+                    <h3>Sham House </h3>
+                    <p>2 bedroom, 2 bathroom, $2,000/month</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>WHAT OUR USERS SAY</h2>
+            <div class="testimonial-bg">
+            <div class="testimonial">
+                <p>"Rentor made finding my new apartment a breeze. The process was straightforward and efficient!"</p>
+                <cite>- Sarah J.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic platform with excellent customer support. Highly recommend Rentor to anyone looking for a rental."</p>
+                <cite>- Mark T.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic platform with excellent customer support. Highly recommend Rentor to anyone looking for a rental."</p>
+                <cite>- Mark T.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic platform with excellent customer support. Highly recommend Rentor to anyone looking for a rental."</p>
+                <cite>- Mark T.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic platform with excellent customer support. Highly recommend Rentor to anyone looking for a rental."</p>
+                <cite>- Mark T.</cite>
+            </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Search</h3>
+                    <p>Enter your location and criteria to find available rental properties.</p>
+                </div>
+                <div class="step">
+                    <h3>2. View Listings</h3>
+                    <p>Browse through the listings and find the one that fits your needs.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Contact</h3>
+                    <p>Get in touch with property owners or agents to schedule a viewing or get more information.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="Que">
+                    Que. How do I post a rental property?
+                </div>
+                <div class="Ans">
+                    Ans. Simply go to the Services page and fill out the form to list your property.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="Que">
+                    Que. Can I filter search results?
+                </div>
+                <div class="Ans">
+                    Ans. Yes, you can filter results based on location, price, and property type.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="Que">
+                    Que. What should I do if I encounter any issues?
+                </div>
+                <div class="Ans">
+                    Ans. If you face any problems, you can contact our support team through the Contact page.
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <h2>Contact Us</h2>
+            <form action="/contact" id="contactForm" class="contactForm" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" class="message" name="message" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>            
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Find Your New Home?</h2>
+            <img src="./Img/pngtree-are-you-ready-banner-abstract-vector-design-images-png-image_6516714.png" alt=""><br>
+            <a href="services.html" class="cta-button">Get Started</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rentor. All rights reserved.</p>
+    </footer>
+    <script>
+        function handleSearch() {
+            const state = document.getElementById('state').value;
+            const city = document.getElementById('city').value;
+            const pincode = document.getElementById('pincode').value;
+
+            const queryParams = new URLSearchParams({ state, city, pincode }).toString();
+            window.location.href = `services.html?${queryParams}`;
+        }
+
+        function toggleAnswer(faqItem) {
+            faqItem.classList.toggle('active');
+        }
+
+        // ContactForm Listener
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Make a POST request to your server for form submission
+                fetch('/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        alert('Message Submitted Successfully!');
+                        form.reset(); // Reset the form after successful submission
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch((error) => console.error('Error:', error));
+            });
+        });
+    </script>
+</body>
+</html>
